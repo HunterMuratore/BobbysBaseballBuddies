@@ -10,7 +10,7 @@ export default function Mission() {
             Breaking Down Barriers,<br />One Game at a Time
           </h2>
           <p className="text-base text-navy/60 leading-relaxed mb-5">
-            Bobby's Baseball Buddies is a 501(c)(3) nonprofit organization dedicated to providing underprivileged youth with the resources, mentorship, and opportunities they need to experience the joys — and lifelong benefits — of baseball.
+            Bobby's Baseball Buddies is a 501(c)(3) nonprofit organization dedicated to providing underprivileged youth with the resources, mentorship, and opportunities they need to experience the joys, and lifelong benefits, of baseball.
           </p>
           <p className="text-base text-navy/60 leading-relaxed mb-5">
             We believe that access to youth sports should never be determined by a family's income. Too many talented, curious, and deserving young people are kept off the field simply because of financial obstacles. We exist to change that.
@@ -19,12 +19,12 @@ export default function Mission() {
           {/* Pull quote */}
           <blockquote className="my-8 pl-6 border-l-4 border-red bg-red/5 py-5 pr-6 rounded-r-lg">
             <p className="font-serif text-xl italic text-navy leading-snug">
-              "Baseball is more than a game. It teaches patience, discipline, teamwork, and resilience — lessons that last a lifetime."
+              "Baseball is more than a game. It teaches patience, discipline, teamwork, and resilience - lessons that last a lifetime."
             </p>
           </blockquote>
 
           <p className="text-base text-navy/60 leading-relaxed">
-            Through targeted programs combining instruction, equipment access, and mentorship, we work to ensure every child has a genuine opportunity to step up to the plate — on the field and in life.
+            Through targeted programs combining instruction, equipment access, and mentorship, we work to ensure every child has a genuine opportunity to step up to the plate - on the field and in life.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function Mission() {
               As a devoted husband, father, grandfather, mentor, and friend, Bobby had a rare gift: the ability to make everyone around him feel seen, valued, and capable. His legacy is the foundation of everything we do.
             </p>
 
-            <ul className="mt-6 space-y-0">
+            {/* <ul className="mt-6 space-y-0">
               {[
                 'Generosity and service to others',
                 'Belief in every child\'s potential',
@@ -53,7 +53,7 @@ export default function Mission() {
                   {val}
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
 

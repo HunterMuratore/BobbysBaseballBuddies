@@ -17,7 +17,7 @@ export default function Story() {
             A Vision Born from<br />a Life Well Lived
           </h2>
           <p className="text-base text-navy/60 leading-relaxed mb-5">
-            Bobby Conti was the kind of person who made the world feel a little more right. His passion for baseball was never about statistics or standings — it was about what the game did to a young person's character when they were given the chance to play it.
+            Bobby Conti was the kind of person who made the world feel a little more right. His passion for baseball was never about statistics or standings. It was about what the game did to a young person's character when they were given the chance to play it.
           </p>
 
           <div className="relative my-8 bg-cream rounded-xl p-8">
@@ -31,7 +31,7 @@ export default function Story() {
             Bobby's Baseball Buddies was founded in his memory to carry that belief forward. Through your support, we can honor his spirit and ensure the next generation of young people receives what Bobby always gave: a genuine opportunity to discover what they're capable of.
           </p>
           <p className="text-base text-navy/60 leading-relaxed">
-            All donations are fully tax-deductible and directed entirely toward program funding — the equipment, instruction, and mentorship that give kids the tools to succeed both on and off the field.
+            All donations are fully tax-deductible and directed entirely toward program funding - the equipment, instruction, and mentorship that give kids the tools to succeed both on and off the field.
           </p>
         </div>
 
