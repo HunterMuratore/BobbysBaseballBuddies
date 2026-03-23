@@ -15,7 +15,6 @@ export default function Navbar() {
     { label: 'Programs', href: '#programs' },
     { label: 'Events', href: '#events' },
     { label: 'Gallery', href: '#gallery' },
-    { label: 'Contact', href: '#contact' },
   ]
 
   return (

@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-white/60 font-light leading-relaxed mb-10 max-w-lg">
-            Bobby's Baseball Buddies removes the financial and social barriers that keep kids on the sidelines — providing equipment, instruction, and mentorship to underserved youth through the game Bobby loved.
+            Bobby's Baseball Buddies removes the financial and social barriers that keep kids on the sidelines - providing equipment, instruction, and mentorship to underserved youth through the game Bobby loved.
           </p>
 
           <div className="flex flex-wrap gap-4">

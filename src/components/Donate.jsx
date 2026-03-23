@@ -13,7 +13,7 @@ export default function Donate() {
           Help Us Honor Bobby's Legacy
         </h2>
         <p className="text-lg text-white/75 font-light leading-relaxed mb-10">
-          Your contribution — of any size — goes directly toward giving a child the equipment, instruction, and mentorship they need to thrive.
+          Your contribution goes directly toward giving a child the equipment, instruction, and mentorship they need to thrive.
         </p>
 
         {/* Amount buttons — placeholder, wire up to payment provider later */}
