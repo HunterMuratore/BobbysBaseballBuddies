@@ -6,8 +6,9 @@ import Story from './components/Story'
 import Gallery from './components/Gallery'
 import Events from './components/Events'
 import Donate from './components/Donate'
-import ContactForm from './components/ContactForm'
+//import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import EmailSignup from './components/EmailSignup'
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
       <Gallery />
       <Events />
       <Donate />
-      <ContactForm />
+      <EmailSignup />
       <Footer />
     </main>
   )

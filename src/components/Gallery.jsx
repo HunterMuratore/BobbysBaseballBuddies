@@ -34,10 +34,6 @@ export default function Gallery() {
             </div>
           ))}
         </div>
-
-        <p className="text-center text-sm text-navy/40 mt-6">
-          To add your own photos, replace the placeholder URLs in <code className="bg-tan px-1 rounded text-xs">src/components/Gallery.jsx</code>
-        </p>
       </div>
     </section>
   )

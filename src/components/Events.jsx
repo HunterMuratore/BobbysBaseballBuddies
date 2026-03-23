@@ -1,35 +1,4 @@
-// Edit src/data/events.js to add, remove, or update events
-// without touching this component.
-
-export const events = [
-  {
-    id: 1,
-    date: { month: 'APR', day: '12' },
-    title: 'Spring Instructional Clinic',
-    location: 'Riverside Park Baseball Fields',
-    time: '9:00 AM – 12:00 PM',
-    description: 'Open to youth ages 7–14. All skill levels welcome. Equipment provided for those who need it.',
-    type: 'Clinic',
-  },
-  {
-    id: 2,
-    date: { month: 'MAY', day: '3' },
-    title: 'Equipment Drive & Donation Day',
-    location: 'Community Center, Main St.',
-    time: '10:00 AM – 3:00 PM',
-    description: 'Drop off gently used baseball gear or receive equipment if your child needs it. No questions asked.',
-    type: 'Donation',
-  },
-  {
-    id: 3,
-    date: { month: 'JUN', day: '21' },
-    title: 'Annual Bobby Conti Memorial Game',
-    location: 'Town Baseball Complex',
-    time: '1:00 PM – 5:00 PM',
-    description: 'Our flagship annual event celebrating Bobby\'s legacy. Family friendly. All proceeds go directly to our programs.',
-    type: 'Fundraiser',
-  },
-]
+import { events } from '../data/events.js';
 
 const typeColors = {
   Clinic: 'bg-grass/15 text-grass border-grass/25',

@@ -3,19 +3,19 @@ const programs = [
     icon: '⚾',
     title: 'Instructional Seminars',
     description:
-      'Interactive, fun, and fundamentals-first. Our clinics teach kids the skills of the game in a welcoming environment — regardless of prior experience. Every session emphasizes confidence, effort, and growth over competition.',
+      'Interactive, fun, and fundamentals-first. Our clinics teach kids the skills of the game in a welcoming environment - regardless of prior experience. Every session emphasizes confidence, effort, and growth over competition.',
   },
   {
     icon: '🥊',
     title: 'Equipment Donations',
     description:
-      'A glove, a bat, a proper uniform — these things matter. We supply essential gear directly to youth who need it most, ensuring no child sits out because their family can\'t afford the equipment to play.',
+      'A glove, a bat, a proper uniform - these things matter. We supply essential gear directly to youth who need it most, ensuring no child sits out because their family can\'t afford the equipment to play.',
   },
   {
     icon: '🤝',
     title: 'Mentorship & Role Models',
     description:
-      'Baseball opens the door; mentorship keeps it open. We connect youth with positive adult role models who invest in their development — on the field and off — fostering confidence, resilience, and belonging.',
+      'Baseball opens the door; mentorship keeps it open. We connect youth with positive adult role models who invest in their development, on the field and off, fostering confidence, resilience, and belonging.',
   },
 ]
 
