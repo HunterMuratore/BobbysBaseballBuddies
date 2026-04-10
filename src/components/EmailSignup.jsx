@@ -13,24 +13,18 @@ export default function EmailSignup() {
     setError('')
 
     try {
-      // TODO: replace this block with your email platform of choice
-      // --- Mailchimp example (when ready) ---
-      // await fetch('/api/subscribe', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email, name })
-      // })
+      const formData = new FormData()
+      formData.append('form-name', 'email-signup')
+      formData.append('name', name)
+      formData.append('email', email)
 
-      // --- Formspree example (free, no backend needed) ---
-      // await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email, name })
-      // })
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      })
 
-      // Placeholder — just logs for now
-      console.log('New signup:', { name, email })
-      await new Promise(r => setTimeout(r, 800)) // simulates network delay
+      if (!response.ok) throw new Error('Submission failed')
       setSubmitted(true)
     } catch (err) {
       setError('Something went wrong. Please try again.')
@@ -48,14 +42,10 @@ export default function EmailSignup() {
 
   return (
     <section id="contact" className="py-24 bg-navy relative overflow-hidden">
-
-      {/* Background glows */}
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-red/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-0 right-1/4 w-80 h-80 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-2xl mx-auto px-6 text-center">
-
-        {/* Eyebrow */}
         <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/25 rounded-full px-4 py-1.5 mb-7">
           <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
           <span className="text-[11px] font-semibold tracking-widest uppercase text-gold/90">
@@ -67,11 +57,10 @@ export default function EmailSignup() {
           Be Part of the Journey
         </h2>
         <p className="text-lg text-white/55 font-light leading-relaxed mb-12 max-w-lg mx-auto">
-          Get updates on upcoming events, program news, and stories from the field.
+          Get updates on upcoming events, program news, and stories from the field — delivered straight to your inbox.
         </p>
 
         {submitted ? (
-          /* Success state */
           <div className="bg-white/5 border border-white/10 rounded-2xl p-12">
             <div className="w-16 h-16 bg-gold/15 border border-gold/25 rounded-full flex items-center justify-center text-3xl mx-auto mb-5">
               ⚾
@@ -84,11 +73,18 @@ export default function EmailSignup() {
             </p>
           </div>
         ) : (
-          /* Form */
           <form
+            name="email-signup"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
             className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 text-left"
           >
+            {/* Netlify required hidden fields */}
+            <input type="hidden" name="form-name" value="email-signup" />
+            <input type="hidden" name="bot-field" />
+
             <div className="flex flex-col gap-4 mb-6">
               <div>
                 <label className="block text-xs font-semibold tracking-widest uppercase text-white/40 mb-2">
@@ -96,6 +92,7 @@ export default function EmailSignup() {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   value={name}
                   onChange={e => setName(e.target.value)}
                   placeholder="First and last name"
@@ -109,6 +106,7 @@ export default function EmailSignup() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   placeholder="your@email.com"
@@ -145,7 +143,6 @@ export default function EmailSignup() {
           </form>
         )}
 
-        {/* Bottom badges */}
         <div className="flex flex-wrap justify-center gap-6 mt-12">
           {[
             { icon: '📅', label: 'Event announcements' },
@@ -158,7 +155,6 @@ export default function EmailSignup() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )

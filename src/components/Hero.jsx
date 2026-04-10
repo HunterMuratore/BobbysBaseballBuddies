@@ -15,12 +15,6 @@ export default function Hero() {
 
         {/* Left — headline */}
         <div>
-          <div className="inline-flex items-center gap-2 bg-red/20 border border-red/40 rounded-full px-4 py-1.5 mb-7">
-            <span className="w-1.5 h-1.5 rounded-full bg-red-light animate-pulse" />
-            <span className="text-[11px] font-semibold tracking-widest uppercase text-red-light/90">
-              501(c)(3) Nonprofit · EIN 87-1709286
-            </span>
-          </div>
 
           <h1 className="font-serif text-5xl md:text-6xl font-black text-white leading-[1.05] mb-6">
             Every Child Deserves a{' '}
@@ -30,6 +24,13 @@ export default function Hero() {
           <p className="text-lg text-white/60 font-light leading-relaxed mb-10 max-w-lg">
             Bobby's Baseball Buddies removes the financial and social barriers that keep kids on the sidelines - providing equipment, instruction, and mentorship to underserved youth through the game Bobby loved.
           </p>
+
+          <div className="inline-flex items-center gap-2 bg-red/20 border border-red/40 rounded-full px-4 py-1.5 mb-7">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-light animate-pulse" />
+            <span className="text-[11px] font-semibold tracking-widest uppercase text-red-light/90">
+              501(c)(3) Nonprofit · EIN 87-1709286
+            </span>
+          </div>
 
           <div className="flex flex-wrap gap-4">
             <a href="#donate" className="inline-flex items-center gap-2 bg-red hover:bg-red-light text-white font-semibold px-8 py-3.5 rounded transition-all duration-200 hover:-translate-y-0.5">

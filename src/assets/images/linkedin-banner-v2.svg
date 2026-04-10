@@ -1,0 +1,31 @@
+<svg width="1128" height="191" viewBox="0 0 1128 191" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="bannerClip">
+      <rect width="1128" height="191"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#bannerClip)">
+    <rect width="1128" height="191" fill="#0d1f3c"/>
+
+    <g opacity="0.06" fill="#ffffff">
+      <circle cx="80" cy="30" r="2"/><circle cx="120" cy="50" r="2"/><circle cx="60" cy="70" r="2"/>
+      <circle cx="100" cy="90" r="2"/><circle cx="40" cy="110" r="2"/><circle cx="140" cy="130" r="2"/>
+      <circle cx="70" cy="155" r="2"/><circle cx="110" cy="170" r="2"/><circle cx="30" cy="180" r="2"/>
+      <circle cx="1000" cy="20" r="2"/><circle cx="1050" cy="45" r="2"/><circle cx="1090" cy="70" r="2"/>
+      <circle cx="1020" cy="95" r="2"/><circle cx="1070" cy="120" r="2"/><circle cx="1100" cy="150" r="2"/>
+      <circle cx="1040" cy="170" r="2"/><circle cx="980" cy="160" r="2"/><circle cx="1110" cy="180" r="2"/>
+    </g>
+
+    <rect x="0" y="0" width="1128" height="5" fill="#c1272d"/>
+
+    <path d="M -40 95 Q 60 20, 160 95 Q 60 170, -40 95" fill="none" stroke="#c1272d" stroke-width="1.5" opacity="0.12"/>
+    <path d="M -20 95 Q 80 30, 180 95 Q 80 160, -20 95" fill="none" stroke="#c1272d" stroke-width="1" opacity="0.08"/>
+    <path d="M 968 95 Q 1068 20, 1168 95 Q 1068 170, 968 95" fill="none" stroke="#c1272d" stroke-width="1.5" opacity="0.12"/>
+    <path d="M 948 95 Q 1048 30, 1148 95 Q 1048 160, 948 95" fill="none" stroke="#c1272d" stroke-width="1" opacity="0.08"/>
+
+    <text x="564" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" font-style="italic" fill="#c1272d" letter-spacing="-1" text-anchor="middle">Bobby's</text>
+    <text x="564" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#ffffff" letter-spacing="4" text-anchor="middle">BASEBALL BUDDIES</text>
+
+    <rect x="0" y="187" width="1128" height="4" fill="#d4a017"/>
+  </g>
+</svg>

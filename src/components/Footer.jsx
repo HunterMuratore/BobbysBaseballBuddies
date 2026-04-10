@@ -5,22 +5,22 @@ const links = {
     { label: 'Programs', href: '#programs' },
     { label: 'Gallery', href: '#gallery' },
   ],
-  'Get Involved': [
-    { label: 'Donate', href: '#donate' },
-    { label: 'Volunteer', href: '#contact' },
-    { label: 'Events', href: '#events' },
-    { label: 'Contact Us', href: '#contact' },
-  ],
+  // 'Get Involved': [
+  //   { label: 'Donate', href: '#donate' },
+  //   { label: 'Volunteer', href: '#contact' },
+  //   { label: 'Events', href: '#events' },
+  //   { label: 'Contact Us', href: '#contact' },
+  // ],
 }
 
 export default function Footer() {
   return (
     <footer className="bg-navy border-t-[3px] border-red pt-16 pb-8">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
 
           {/* Brand */}
-          <div>
+          <div className="max-w-xs">
             <h3 className="font-serif text-xl font-bold text-white mb-3">
               Bobby's <span className="text-gold">Baseball</span> Buddies
             </h3>
