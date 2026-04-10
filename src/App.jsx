@@ -2,8 +2,8 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Mission from './components/Mission'
 import Programs from './components/Programs'
-import Story from './components/Story'
-import Gallery from './components/Gallery'
+// import Story from './components/Story'
+// import Gallery from './components/Gallery'
 import Events from './components/Events'
 import Donate from './components/Donate'
 import ContactForm from './components/ContactForm'
@@ -17,8 +17,6 @@ export default function App() {
       <Hero />
       <Mission />
       <Programs />
-      <Story />
-      <Gallery />
       <Events />
       <Donate />
       <ContactForm />

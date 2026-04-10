@@ -1,9 +1,10 @@
 const links = {
   Organization: [
     { label: 'Our Mission', href: '#mission' },
-    { label: "Bobby's Story", href: '#story' },
+    // { label: "Bobby's Story", href: '#story' },
     { label: 'Programs', href: '#programs' },
-    { label: 'Gallery', href: '#gallery' },
+    { label: 'Events', href: '#events' },
+    // { label: 'Gallery', href: '#gallery' },
   ],
   // 'Get Involved': [
   //   { label: 'Donate', href: '#donate' },

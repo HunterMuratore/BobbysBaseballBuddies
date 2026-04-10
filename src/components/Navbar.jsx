@@ -14,7 +14,7 @@ export default function Navbar() {
     { label: 'Mission', href: '#mission' },
     { label: 'Programs', href: '#programs' },
     { label: 'Events', href: '#events' },
-    { label: 'Gallery', href: '#gallery' },
+    // { label: 'Gallery', href: '#gallery' },
   ]
 
   return (
