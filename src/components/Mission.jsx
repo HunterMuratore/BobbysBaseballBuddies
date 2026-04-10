@@ -1,3 +1,5 @@
+import bobbyPhoto from '../assets/images/BobbyS_Logo.png'
+
 export default function Mission() {
   return (
     <section id="mission" className="py-24 bg-cream">
@@ -30,30 +32,28 @@ export default function Mission() {
 
         {/* Right — founder card */}
         <div className="sticky top-24">
-          <div className="bg-navy rounded-2xl p-10 text-white">
-            <h3 className="font-serif text-2xl font-bold mb-4">
-              Founded in Honor of <span className="text-gold">Bobby Conti</span>
-            </h3>
-            <p className="text-sm text-white/60 leading-relaxed mb-4">
-              Bobby was a lifelong baseball enthusiast who understood that the game's real value lay in the relationships, the lessons, and the character it builds in young people.
-            </p>
-            <p className="text-sm text-white/60 leading-relaxed">
-              As a devoted husband, father, grandfather, mentor, and friend, Bobby had a rare gift: the ability to make everyone around him feel seen, valued, and capable. His legacy is the foundation of everything we do.
-            </p>
+          <div className="bg-navy rounded-2xl overflow-hidden text-white">
+            <div className="p-10">
+              <h3 className="font-serif text-2xl font-bold mb-4">
+                Founded in Honor of <span className="text-gold">Bobby Conti</span>
+              </h3>
+              <p className="text-sm text-white/60 leading-relaxed mb-4">
+                Bobby was a lifelong baseball enthusiast who understood that the game's real value lay in the relationships, the lessons, and the character it builds in young people.
+              </p>
+              <p className="text-sm text-white/60 leading-relaxed">
+                As a devoted husband, father, grandfather, mentor, and friend, Bobby had a rare gift: the ability to make everyone around him feel seen, valued, and capable. His legacy is the foundation of everything we do.
+              </p>
+            </div>
 
-            {/* <ul className="mt-6 space-y-0">
-              {[
-                'Generosity and service to others',
-                'Belief in every child\'s potential',
-                'Building community through sport',
-                'Leading by example, always',
-              ].map(val => (
-                <li key={val} className="flex items-start gap-3 py-3 border-t border-white/10 text-sm text-white/60">
-                  <span className="mt-0.5 w-5 h-5 rounded-full bg-red/20 border border-red/30 flex items-center justify-center text-[10px] text-red-light flex-shrink-0">✓</span>
-                  {val}
-                </li>
-              ))}
-            </ul> */}
+            {/* Photo */}
+            <div className="px-10 pb-10">
+              <img
+                src={bobbyPhoto}
+                alt="Bobby Conti with his sons"
+                className="w-full rounded-xl object-cover"
+              />
+            </div>
+
           </div>
         </div>
 
