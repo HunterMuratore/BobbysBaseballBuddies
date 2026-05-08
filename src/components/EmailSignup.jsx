@@ -57,7 +57,7 @@ export default function EmailSignup() {
           Be Part of the Journey
         </h2>
         <p className="text-lg text-white/55 font-light leading-relaxed mb-12 max-w-lg mx-auto">
-          Get updates on upcoming events, program news, and stories from the field — delivered straight to your inbox.
+          Get updates on upcoming events, program news, and stories from the field.
         </p>
 
         {submitted ? (
