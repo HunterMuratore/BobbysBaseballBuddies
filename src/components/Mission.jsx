@@ -1,4 +1,4 @@
-import bobbyPhoto from '../assets/images/BobbyS_Logo.png'
+import bobbyPhoto from '../assets/images/Bobbys_Logo.png'
 
 export default function Mission() {
   return (
