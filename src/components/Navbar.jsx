@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+import logo from '../assets/images/NewLogo_NoBG.png'
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -18,13 +20,22 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[3px] border-red
-      ${scrolled ? 'bg-navy shadow-lg' : 'bg-navy/95'}`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[3px] border-red
+      ${scrolled ? 'bg-navy shadow-lg' : 'bg-navy/95'}`}
+    >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <a href="#" className="font-serif text-lg font-bold text-white tracking-wide">
-          Bobby's <span className="text-gold">Baseball</span> Buddies
+        <a href="#" className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="Bobby's Baseball Buddies logo"
+            className="w-10 h-10 object-contain"
+          />
+          <span className="font-serif text-lg font-bold text-white tracking-wide hidden sm:inline">
+            Bobby's <span className="text-gold">Baseball</span> Buddies
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -39,6 +50,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+
           <li>
             <a
               href="#donate"
@@ -55,9 +67,21 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <div className={`w-5 h-0.5 bg-white mb-1 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
-          <div className={`w-5 h-0.5 bg-white mb-1 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <div className={`w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
+          <div
+            className={`w-5 h-0.5 bg-white mb-1 transition-all duration-300 ${
+              menuOpen ? 'rotate-45 translate-y-1.5' : ''
+            }`}
+          />
+          <div
+            className={`w-5 h-0.5 bg-white mb-1 transition-all duration-300 ${
+              menuOpen ? 'opacity-0' : ''
+            }`}
+          />
+          <div
+            className={`w-5 h-0.5 bg-white transition-all duration-300 ${
+              menuOpen ? '-rotate-45 -translate-y-1.5' : ''
+            }`}
+          />
         </button>
       </div>
 
@@ -74,6 +98,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+
           <a
             href="#donate"
             onClick={() => setMenuOpen(false)}

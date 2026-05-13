@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Mission from './components/Mission'
+// import Memorial from './components/Memorial'
 import Programs from './components/Programs'
 // import Story from './components/Story'
 // import Gallery from './components/Gallery'

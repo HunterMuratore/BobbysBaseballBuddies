@@ -1,4 +1,6 @@
-import bobbyPhoto from '../assets/images/Bobbys_Logo.png'
+// import bobbyPhoto from '../assets/images/Bobbys_Logo.png'
+import bobbyPhoto from '../assets/images/NewLogo.png'
+import bobbySons from '../assets/images/BobbySons.jpg'
 
 export default function Mission() {
   return (
@@ -21,7 +23,7 @@ export default function Mission() {
           {/* Pull quote */}
           <blockquote className="my-8 pl-6 border-l-4 border-red bg-red/5 py-5 pr-6 rounded-r-lg">
             <p className="font-serif text-xl italic text-navy leading-snug">
-              "Baseball is more than a game. It teaches patience, discipline, teamwork, and resilience - lessons that last a lifetime."
+              Baseball is more than a game. It teaches patience, discipline, teamwork, and resilience - lessons that last a lifetime.
             </p>
           </blockquote>
 
@@ -48,7 +50,7 @@ export default function Mission() {
             {/* Photo */}
             <div className="px-10 pb-10">
               <img
-                src={bobbyPhoto}
+                src={bobbySons}
                 alt="Bobby Conti with his sons"
                 className="w-full rounded-xl object-cover"
               />
